@@ -41,7 +41,7 @@ function App() {
 
         {loading ? <Loader /> :
         <section className="details-section">
-        <img className="poster" src={generateMovieData?.Poster} onerror="this.style.display='none'"/>
+        <img className="poster" src={generateMovieData?.Poster} onError="this.style.display='none'"/>
         <div className="info-container">
           <h1>{generateMovieData?.Title}</h1>
           <p>{generateMovieData?.Year}</p>
