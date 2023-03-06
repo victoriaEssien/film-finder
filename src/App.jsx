@@ -14,7 +14,7 @@ function App() {
     const fetchMovieData = (e) => {
       e.preventDefault();
       setLoading(true)
-      Axios.get(`http://www.omdbapi.com/?&t=${title}&apikey=94343e34`).then((res) => {
+      Axios.get(`https://www.omdbapi.com/?&t=${title}&apikey=94343e34`).then((res) => {
         setGenerateMovieData(res.data);
         setLoading(false)
       })
